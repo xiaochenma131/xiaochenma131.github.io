@@ -1,0 +1,58 @@
+.body_container {
+    background-color: rgb(235, 123, 192);
+    margin-top: 140px;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    display: grid;
+    grid-template-areas: "box1 box2 box3"
+        "box4 box5 box6";
+
+}
+
+img {
+    height: 400px;
+    width: 400px;
+    border-radius: 10%;
+    margin: 20px;
+    object-fit: cover;
+}
+
+#image_1 {
+    grid-area: box1;
+}
+
+#image_2 {
+    grid-area: box2;
+}
+
+#image_3 {
+    grid-area: box3;
+}
+
+#image_4 {
+    grid-area: box4;
+}
+
+#image_5 {
+    grid-area: box5;
+}
+
+#image_6 {
+    grid-area: box6;
+}
+
+@media screen and (max-width: 1000px) {
+    .topnav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body_container {
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

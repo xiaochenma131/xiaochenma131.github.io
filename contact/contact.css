@@ -1,0 +1,44 @@
+.body_container {
+    background-color: rgb(235, 123, 192);
+    margin-top: 140px;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.contact {
+    background-color: rgb(250, 162, 175);
+    width: 350px;
+    height: 350px;
+    border-radius: 20%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+@media screen and (max-width: 1000px) {
+    .topnav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body_container {
+        padding-top: 200px;
+    }
+}

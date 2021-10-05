@@ -1,0 +1,28 @@
+.body_container {
+    background-color: rgb(235, 123, 192);
+    margin-top: 140px;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-right: 30px;
+}
+
+.project {
+    color: white;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+li {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1000px) {
+    .topnav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body_container {
+        padding-top: 200px;
+    }
+}
