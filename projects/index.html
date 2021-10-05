@@ -1,1 +1,148 @@
-Project
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Project_Xiaochen_Ma</title>
+    <link rel="stylesheet" href="coolstyle.css">
+    <style>
+        .big_container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .top_container {
+            background-color: rgb(250, 162, 175);
+            top: 0;
+            position: fixed;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        h1 {
+            background-color: rgb(250, 162, 175);
+            color: white;
+            font-family: cursive;
+            font-size: bold 45px;
+            width: 100%;
+        }
+
+        .topnav {
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        .topnav a:hover {
+            background-color: white;
+            color: rgb(235, 123, 192);
+        }
+
+        .topnav a.active {
+            background-color: rgb(235, 123, 192);
+            color: white;
+        }
+
+        .body_container {
+            background-color: rgb(235, 123, 192);
+            margin-top: 140px;
+            width: 100%;
+            padding-bottom: 50px;
+            padding-right: 30px;
+        }
+
+        .project {
+            color: white;
+            margin-left: 50px;
+            margin-bottom: 40px;
+        }
+
+        li {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big_container">
+        <div class="top_container">
+            <h1>Xiaochen Ma</h1>
+            <div class="topnav">
+                <a href="">Home</a>
+                <a class="active" href="projects/">Projects</a>
+                <a href="contact/">Contact</a>
+                <a href="gallery/">Gallery</a>
+            </div>
+        </div>
+        <div class="body_container">
+            <div class="project">
+                <h3>Twitch+: Personalized Twitch resources recommendation engine</h3>
+                <h4>Jun 2021 – Aug 2021</h4>
+                <ul>
+                    <li>Designed and built a full-stack web application for users to login/logout, search, favorite
+                        Twitch resources (stream/video/clip) and get recommendations</li>
+                    <li>Built a web page with friendly user experience using React and Ant Design</li>
+                    <li>Implemented RESTful APIs to handle HTTP requests and responses using Java servlets and Tomcat
+                    </li>
+                    <li>Utilized MySQL database on Amazon RDS to store data fetched from Twitch API and deployed the
+                        service to Amazon EC2 for better stability</li>
+                    <li>Explored multiple recommendation algorithms and extracted game information from Twitch resources
+                        to implement a Content-based recommendation algorithm</li>
+                </ul>
+                <a href="http://3.17.156.6">Project Link</a>
+            </div>
+            <div class="project">
+                <h3>Doordash+: A Spring and Hibernate based online food ordering system</h3>
+                <h4>Jul 2021</h4>
+                <ul>
+                    <li>Developed a food ordering service via Spring MVC to support registration, menu searching,
+                        ordering and checkout</li>
+                    <li>Implemented authentication and authorization via Spring security to protect the application from
+                        malicious attacks</li>
+                    <li>Utilized Hibernate to access and operate the data (menu, restaurants etc.) stored in MySQL
+                        database on Amazon RDS</li>
+                    <li>Used the Spring Core to loosely decouple all the components in the application</li>
+                    <li>Built the client side with ReactJS and Ant Design to allow users to add items to the shopping
+                        cart and place orders</li>
+                </ul>
+                <a href="https://github.com/xiaochenma131/DoorDash_Food_Order_System">Project Link</a>
+            </div>
+            <div class="project">
+                <h3>K-SEA Shell</h3>
+                <h4>Feb 2021 – Apr 2021</h4>
+                <ul>
+                    <li>Built a Shell in C that serves as an intermediate between the user and the operating system</li>
+                    <li>Implemented built-in functions to support commands including ‘help’, ‘exit’, ‘ls’ and ‘cd’</li>
+                    <li>upgraded the Shell by implementing and documenting an additional built-in command called ‘game’
+                        that launches a guessing game process</li>
+                    <li>Coded a function to parse and evaluate the user’s input to decide whether the shell can handle
+                        the request</li>
+                </ul>
+                <a href="https://github.com/xiaochenma131/K-SEA-Shell">Project Link</a>
+            </div>
+            <div class="project">
+                <h3>To-Do List Application: An object-oriented design for status tracking and storage</h3>
+                <h4>Feb 2021 – Apr 2021</h4>
+                <ul>
+                    <li>Built a command-line task management application compatible with Windows and macOS following
+                        Model-View-Controller architecture and SOLID principles</li>
+                    <li>Designed and implemented the underlying workflow for retrieving, modifying, storing and sorting
+                        to-dos by interacting with a source CSV file as the database</li>
+                    <li>Designed algorithms to validate users’ command-line inputs and perform corresponding tasks (add,
+                        complete and display)</li>
+                </ul>
+                <a href="https://github.com/xiaochenma131/To-do-List-Application">Project Link</a>
+            </div>
+
+        </div>
+</body>

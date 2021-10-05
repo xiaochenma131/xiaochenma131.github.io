@@ -1,1 +1,134 @@
-gallery
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Gallery_Xiaochen_Ma</title>
+    <link rel="stylesheet" href="coolstyle.css">
+    <style>
+        .big_container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .top_container {
+            background-color: rgb(250, 162, 175);
+            top: 0;
+            position: fixed;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        h1 {
+            background-color: rgb(250, 162, 175);
+            color: white;
+            font-family: cursive;
+            font-size: bold 45px;
+            width: 100%;
+        }
+
+        .topnav {
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        .topnav a:hover {
+            background-color: white;
+            color: rgb(235, 123, 192);
+        }
+
+        .topnav a.active {
+            background-color: rgb(235, 123, 192);
+            color: white;
+        }
+
+        .body_container {
+            background-color: rgb(235, 123, 192);
+            margin-top: 140px;
+            width: 100%;
+            padding-bottom: 50px;
+            padding-right: 30px;
+            display: grid;
+            grid-template-areas: "box1 box2 box3"
+                "box4 box5 box6";
+
+        }
+
+        img {
+            height: 400px;
+            width: 400px;
+            border-radius: 10%;
+            margin: 20px;
+            object-fit: cover;
+        }
+
+        #image_1 {
+            grid-area: box1;
+        }
+
+        #image_2 {
+            grid-area: box2;
+        }
+
+        #image_3 {
+            grid-area: box3;
+        }
+
+        #image_4 {
+            grid-area: box4;
+        }
+
+        #image_5 {
+            grid-area: box5;
+        }
+
+        #image_6 {
+            grid-area: box6;
+        }
+    </style>
+
+<body>
+    <div class="big_container">
+        <div class="top_container">
+            <h1>Xiaochen Ma</h1>
+            <div class="topnav">
+                <a href="">Home</a>
+                <a href="projects/">Projects</a>
+                <a href="contact/">Contact</a>
+                <a class="active" href="gallery/">Gallery</a>
+            </div>
+        </div>
+        <div class="body_container">
+            <span class=image id="image_1">
+                <img src="me1.JPG" alt="my image 1">
+            </span>
+            <span class=image id="image_2">
+                <img src="me2.JPG" alt="my image 2">
+            </span>
+            <span class=image id="image_3">
+                <img src="me3.JPG" alt="my image 3">
+            </span>
+            <span class=image id="image_4">
+                <img src="Ferarri.JPG" alt="Ferarri">
+            </span>
+            <span class=image id="image_5">
+                <img src="yumi.JPG" alt="yumi">
+            </span>
+            <span class=image id="image_6">
+                <img src="laalaa.JPG" alt="laalaa">
+            </span>
+
+        </div>
+    </div>
+</body>
