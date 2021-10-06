@@ -56,3 +56,12 @@ img {
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 400px) {
+    img {
+        height: 250px;
+        width: 250px;
+    }
+
+
+}
